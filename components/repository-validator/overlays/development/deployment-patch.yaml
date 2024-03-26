@@ -1,0 +1,18 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: repository-validator
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-user-workloads/konflux-infra-tenant/repository-validator/repository-validator@sha256:dbdcacee4d09127b3f5707e1bd6791b233c1d3d92a4af19712b95d2b142e31bc
+        name: container-image
+        resources: {}
+status: {}
