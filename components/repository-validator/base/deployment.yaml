@@ -23,7 +23,7 @@ spec:
         app.kubernetes.io/instance: repository-validator
     spec:
       containers:
-      - image: quay.io/redhat-user-workloads/konflux-infra-tenant/repository-validator/repository-validator@sha256:dbdcacee4d09127b3f5707e1bd6791b233c1d3d92a4af19712b95d2b142e31bc
+      - image: quay.io/redhat-user-workloads/konflux-infra-tenant/repository-validator/repository-validator@sha256:e92b4c8e946af43e88f15a339de6cb130a567c1584a85358eda4defd5c59959f
         imagePullPolicy: Always
         name: container-image
         resources: {}
